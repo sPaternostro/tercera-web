@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Sebastian Paternostro">
+    <meta name="description" content="Portafolio de desarrollo web">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="/img/icono-blanco.svg" type="image/x-icon">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200;1,400&family=Quicksand:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- TITULO -->
+    <title>sPaternostro | FrontEnd WebDev</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="img/favicon.svg" width="50" alt="logo pag web">
+                </a>
+
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link" aria-current="page" href="#sobre-mi">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img src="img/pfp.jpg" alt="default user pfp" class="hero-pfp">
+            <h1>¡Hola! Soy Sebastian Paternostro</h1>
+            <h2>Desarrollador web front-end</h2>
+        </div>
+        <div class="hero-inferior">
+            <img class="hero-inferior-img img-fluid" src="img/hero-inferior.svg"
+                alt="Monitor, laptop y logos de HTML,CSS & REACT">
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="sobre-mi seccion-oscura" id="sobre-mi">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conocé a Sebastian Paternostro</h2>
+            <p class="seccion-texto">Soy un estudiante universitario y autodidacta, formándome en Desarrollo Web.<br>Mi objetivo profesional es convertirme en un desarrollador FullStack.</p>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+
+                <!-- Desarrollo Web -->
+
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="exp-titulo">Desarrollo Web</p>
+                    <p>Estas son algunas de las tecnologías que manejo actualmente, además de Java y mySQL.
+                    </p>
+
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                        <span class="badge text-bg-primary">JavaScript</span>
+                        <span class="badge text-bg-primary">Bootstrap</span>
+                    </div>
+
+                </div>
+
+                <!-- Planes a futuro -->
+
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="exp-titulo">Próximas tecnologías</p>
+                    <p>Las próximas tecnologías que aprenderé serán React, Angular, MongoDB, y NodeJS.</p>
+
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">React</span>
+                        <span class="badge text-bg-primary">NodeJS</span>
+                        <span class="badge text-bg-primary">MongoDB</span>
+                    </div>
+
+                </div>
+
+                <!-- Estudiante -->
+
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="exp-titulo">Estudios</p>
+                    <p>Además de estudiar de manera autodidacta, me encuentro cursando estudios universitarios en el área de Ingeniería, específicamente Desarrollo Web.</p>
+
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">freeCodeCamp</span>
+                        <span class="badge text-bg-primary">UNLaM</span>
+                        <span class="badge text-bg-primary">Documentation</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="proyectos-recientes seccion-clara d-flex flex-column" id="proyectos">
+        <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+        <h3 class="seccion-descripcion">Estos son algunos proyectos que creé recientemente</h3>
+
+        <!-- Galeria de proyectos -->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto1.png" alt="Proyecto 1">
+                        <div class="overlay">
+                            <p class="texto-proyecto">Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/sPaternostro/primera-web" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i> </a>
+                                <a href="https://spaternostro.github.io/primera-web/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto2.png" alt="Proyecto 2">
+                        <div class="overlay">
+                            <p class="texto-proyecto">Proyecto 2</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/sPaternostro/1stCalculator" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i> </a>
+                                <a href="https://spaternostro.github.io/1stCalculator/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto3.png" alt="Proyecto 3">
+                        <div class="overlay">
+                            <p class="texto-proyecto">Proyecto 3</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/sPaternostro/segunda-web" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i> </a>
+                                <a href="https://spaternostro.github.io/segunda-web/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-laptop"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto4.png" alt="Proyecto 4">
+                        <div class="overlay">
+                            <p class="texto-proyecto">Proyecto 4</p>
+                            <div class="iconos-contenedor">
+                                <a href="#sobre-mi" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i> </a>
+                                <a href="#sobre-mi">
+                                    <i class="bi bi-laptop"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto5.png" alt="Proyecto 5">
+                        <div class="overlay">
+                            <p class="texto-proyecto">Proyecto 5 - Próximamente</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/sPaternostro" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i> </a>
+                                <a href="#">
+                                    <i class="bi bi-laptop"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/proyecto6.png" alt="Proyecto 6">
+                        <div class="overlay">
+                            <p class="texto-proyecto">Proyecto 6 - Próximamente</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/sPaternostro" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i> </a>
+                                <a href="#">
+                                    <i class="bi bi-laptop"></i> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-info">
+            <a href="https://github.com/sPaternostro" target="_blank" rel="noopener noreferrer">
+                Ver más proyectos 
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </a>
+        </button>
+    </section>
+
+    <!-- ARTICULOS -->
+    <section class="articulos justify-content-start">
+        <h2 class="seccion-titulo texto-negro">Artículos</h2>
+
+        <div class="card">
+            <div class="card-header">
+              Más recientes
+            </div>
+            <ul class="list-group list-group-flush">
+                <!-- Item 1 -->
+                <a href="https://spaternostro.github.io/primera-web/" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Mi primer web hecha con HTML & CSS puro</li>
+                </a>
+                <!-- Item 2 -->
+                <a href="https://spaternostro.github.io/segunda-web/" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Mi segunda landing page, con mejores prácticas y diseño más actualizado</li>
+                </a>
+                <!-- Item 3 -->
+                <a href="#sobre-mi" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Mi tercera web, hecha con Bootstrap.</li>
+                </a>
+              
+            </ul>
+          </div>
+
+          <button type="button" class="btn btn-info">
+            <a href="https://github.com/sPaternostro" target="_blank" rel="noopener noreferrer">Ver más artículos  <i class="bi bi-arrow-right-circle-fill"></i></a>
+          </button>
+
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios seccion-clara" id="testimonios">
+        <h2 class="seccion-titulo texto-negro">Testimonios</h2>
+        <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes</h3>
+
+        <!-- CARRUSEL -->
+
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+
+                <!-- Cliente 1  -->
+                <div class="container">
+                    <img src="img/persona1.jpg" alt="hombre joven" class="testimonio-img rounded-circle"> <!-- Foto cliente-->
+
+                    <p class="testimonio-texto"><!--Testimonio-->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eius deleniti magni, magnam excepturi quae blanditiis dolorum quia odio voluptate molestiae voluptas hic saepe quasi aspernatur aut accusantium fugit! Nihil!
+                    </p> 
+
+                    <div class="testimonio-info"> <!-- Pie de foto-->
+
+                        <p class="cliente">Gino</p>
+                        <p class="cargo">Dueño de una PyME</p>
+                    </div>
+
+                </div>
+                
+              </div>
+
+              <!-- Cliente 2 -->
+              <div class="carousel-item">
+
+                <div class="container">
+                    <img src="img/persona2.jpg" alt="mujer pelirroja" class="testimonio-img rounded-circle"> <!-- Foto cliente-->
+
+                    <p class="testimonio-texto"><!--Testimonio-->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eius deleniti magni, magnam excepturi quae blanditiis dolorum quia odio voluptate molestiae voluptas hic saepe quasi aspernatur aut accusantium fugit! Nihil!
+                    </p> 
+
+                    <div class="testimonio-info"> <!-- Pie de foto-->
+
+                        <p class="cliente">Camila</p>
+                        <p class="cargo">Dueña de una tienda de cortinas</p>
+                    </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- Cliente 3 -->
+              <div class="carousel-item">
+
+                <div class="container">
+                    <img src="img/persona3.jpg" alt="hombre con lentes" class="testimonio-img rounded-circle"> <!-- Foto cliente-->
+
+                    <p class="testimonio-texto"><!--Testimonio-->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eius deleniti magni, magnam excepturi quae blanditiis dolorum quia odio voluptate molestiae voluptas hic saepe quasi aspernatur aut accusantium fugit! Nihil!
+                    </p> 
+
+                    <div class="testimonio-info"> <!-- Pie de foto-->
+
+                        <p class="cliente">Sergio</p>
+                        <p class="cargo">Dueño de empresa de Transporte y Logística</p>
+                    </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto seccion-oscura" id="contacto">
+        <div class="container">
+            <div class="container text-center d-flex justify-content-evenly rectangulo">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        ¡Pongámonos en contacto!
+                    </div>
+
+                    <div class="col-12 col-md-4 descripcion">
+                        Puedo crear la landing page que <span class="underline">necesitás para tu negocio</span> 
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:sebastian.paternostro@gmail.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi bi-envelope-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img src="img/icono-blanco.svg" alt="logo portafolio" class="footer-logo">
+        <p class="footer-texto text-center">
+            Aprendiendo y creando cada día, un paso a la vez. <br> 
+        </p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <!-- links -->
+            <a href="https://github.com/sPaternostro" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/spaternostro99/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+
+            <a href="mailto:sebastian.paternostro@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
+
+        </div>
+        <p class="copy">
+            &copy; Creado por Sebastian Paternostro (2023)
+        </p>
+    </footer>
+
+
+
+
+
+    <!-- JS BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
